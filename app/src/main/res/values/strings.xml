@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UniversitiesDatabase</string>
+    <string name="add_word">Wort hinzufügen</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_location">Ort</string>
+    <string name="hint_state">Staatlich</string>
+    <string name="hint_applied">Angewandt</string>
+    <string name="hint_courses_number">Anzahl Studiengänge</string>
+    <string name="hint_photo">Foto</string>
+    <string name="button_photo">Foto aufnehmen</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+</resources>
