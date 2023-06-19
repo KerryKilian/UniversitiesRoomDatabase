@@ -1,29 +1,20 @@
 package com.kerrykilian.studentuniversityroomdb;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.os.Bundle;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.kerrykilian.studentuniversityroomdb.student.Student;
 import com.kerrykilian.studentuniversityroomdb.student.StudentAdapter;
 import com.kerrykilian.studentuniversityroomdb.student.StudentDao;
-import com.kerrykilian.studentuniversityroomdb.university.University;
-import com.kerrykilian.studentuniversityroomdb.university.UniversityListAdapter;
-import com.kerrykilian.studentuniversityroomdb.university.UniversityRepository;
 import com.kerrykilian.studentuniversityroomdb.university.UniversityRoomDatabase;
-import com.kerrykilian.studentuniversityroomdb.university.UniversityRoomDatabase_Impl;
 import com.kerrykilian.studentuniversityroomdb.university.UniversityViewModel;
-import com.kerrykilian.studentuniversityroomdb.utils.ImageSaver;
-import com.kerrykilian.studentuniversityroomdb.utils.ImageStorage;
 
 import java.util.List;
 

@@ -1,25 +1,22 @@
 package com.kerrykilian.studentuniversityroomdb;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.net.Uri;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.ImageButton;
-import android.widget.Toast;
 
 import com.kerrykilian.studentuniversityroomdb.student.Student;
 import com.kerrykilian.studentuniversityroomdb.university.University;
 import com.kerrykilian.studentuniversityroomdb.university.UniversityListAdapter;
 import com.kerrykilian.studentuniversityroomdb.university.UniversityViewModel;
 import com.kerrykilian.studentuniversityroomdb.utils.ImageSaver;
-import com.kerrykilian.studentuniversityroomdb.utils.ImageStorage;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -107,7 +104,6 @@ public class MainActivity extends AppCompatActivity implements UniversityListAda
                         setFileName(data.getStringExtra("matrikel") + ".jpg").
                         setDirectoryName("images").
                         save(data.getParcelableExtra("photo"));
-//                ImageStorage.saveImageToStorage(data.getParcelableExtra("photo"), data.getStringExtra("matrikel"), this);
 
 
             }
